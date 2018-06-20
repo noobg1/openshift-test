@@ -73,7 +73,7 @@ app.get('/', function (req, res) {
       res.render('index.html', { pageCountMessage : count, dbInfo: dbDetails });
     });
   } else {
-    res.send(`${process.env.noobj}`);
+    res.send(`${process.env.noobj}: ${process.env.config}`);
   }
 });
 
